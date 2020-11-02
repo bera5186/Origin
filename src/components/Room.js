@@ -1,10 +1,11 @@
+import React from "react";
 import './room.css'
 
-export default Room(){
+const Room = () => {
     return (
         <>
         <div class="grateful-message">
-        <h1 class="hey">Hey!!</h1> <p class="short-tutorial">We are grateful that you are here,</br> you are one step away to use our services.</br> Create a room or simply join a room through link</p>
+        <h1 class="hey">Hey!!</h1> <p class="short-tutorial">We are grateful that you are here,<br> you are one step away to use our services.</br> Create a room or simply join a room through link</p>
         </div>
 
     <div class="form-modal">
@@ -29,7 +30,9 @@ export default Room(){
         </div>
     
       </div>
-   </div>
+
         </>
     )
 }
+
+export default Room;

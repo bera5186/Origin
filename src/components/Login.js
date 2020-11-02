@@ -1,15 +1,17 @@
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import './login.css'
-export default function Login(){
-     return(
-          <>
-            
+
+const Auth = () => {
+     return (
+          
+            <>
             <div class="form-modal">
     
-    <div class="form-toggle">
+                <div class="form-toggle">
         <button id="login-toggle" onclick="toggleLogin()">log in</button>
         <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
-    </div>
+        </div>
+        </div>
 
     <div id="login-form">
         <form>
@@ -34,14 +36,15 @@ export default function Login(){
         </form>
     </div>
 
-  </div>
-</div>
+
 
 <div class="study-illustration">
-   <img src=".assets/welcome.svg" alt="" width="750" height="500px">
+   <img src="./assets/welcome.svg" alt="" width="750" height="500px" />
 </div>
 
-
-          </>
+</>
+          
      )
 }
+
+export default Auth;
